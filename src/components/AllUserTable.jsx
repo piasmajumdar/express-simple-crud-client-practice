@@ -24,7 +24,7 @@ const AllUserTable = ({ users }) => {
                                         <Table.Cell>{user.isActive ? "Active" : "Not Active"}</Table.Cell>
                                         <Table.Cell>{user.email}</Table.Cell>
                                         <Table.Cell>
-                                            <Link href={'#'}><Button variant="outline">Details</Button></Link>
+                                            <Link href={`/users/${user?._id}`}><Button variant="outline">Details</Button></Link>
                                             <Link href={'#'}><Button variant="outline">Edit</Button></Link>
                                             <AlertDialog>
                                                 <Button variant="danger">Delete</Button>
